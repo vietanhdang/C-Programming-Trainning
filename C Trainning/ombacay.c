@@ -4,7 +4,7 @@
 #include <time.h>
 int main()
 {
-    char x;
+    char test;
     int people;
     int l;
     int h[36];
@@ -13,7 +13,7 @@ int main()
     printf("***************OM BA CAY****************\n");
     while (1==1)
     {
-//        srand(time(NULL));
+        srand(time(NULL));
         printf("Moi ban nhap vao so nguoi ngoi: ");
         scanf("%d",&people);
         if (people >=2 && people<=12)
@@ -31,7 +31,7 @@ int main()
                 h[k] = h[r];
                 h[r] = t;
             }
-
+            
             for (int i=0; i<l; i+=3)
             {
                 int s=0;
@@ -40,15 +40,13 @@ int main()
                 {
                     s+=z[h[k]];
                     printf("%s ",list[h[k]]);
-
                 }
                 if(s%10==0)
                     printf("\ttong la: %d",10);
                 else
                 {
-                    printf("\ttong la: %d",s%10);
+                    printf("\ttong la: %d ",s%10);
                 }
-
             }
         }
         else
@@ -57,12 +55,11 @@ int main()
         }
         printf("\nBan co muon choi tiep khong y or n\n");
         fflush(stdin);
-        printf("your choise: ");
-        scanf("%c",&x);
-        if (x=='n')
+        printf("enter your choice: ");
+        scanf("%c",&test);
+        if (test=='n')
         {
             break;
         }
     }
 }
-
