@@ -183,7 +183,9 @@ int main()
             }
             else
             {
+                printf("====================================================\n");
                 printf("Not contain values: %s : that you have imported to search \n",search);
+                printf("====================================================\n");
             }
         }
         // Add element to array if it's not available yet
@@ -197,7 +199,8 @@ int main()
             {
                 strcpy(arr[currentNumberElements],search);
                 currentNumberElements++;
-                printf("New element \ %s \ is added to array. \n",search);
+                printf("New element %s is added to array. \n",search);
+                printf("====================================================\n");
                 printf("New array are: \n");
                 sortAllElements(currentNumberElements,arr);
                 printAllElements(arr);
