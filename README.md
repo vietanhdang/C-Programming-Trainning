@@ -1,2 +1,2 @@
 # C-Programming-Trainning
-From University Individual Student. 
+Everything I had learned at FPT University.
